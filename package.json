@@ -1,0 +1,30 @@
+{
+  "name": "ptx-leetcode-ts",
+  "version": "1.0.0",
+  "description": "Leetcode and other challenges solved in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaspavlatka/ptx-leetcode-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tomaspavlatka/ptx-leetcode-ts/issues"
+  },
+  "homepage": "https://github.com/tomaspavlatka/ptx-leetcode-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.9.3"
+  }
+}
