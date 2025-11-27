@@ -7,21 +7,13 @@ export class TopKFrequentItemsSolver {
     }, new Map<string, number>());
 
     const groups = [...frequencies.entries()].reduce((m, frequency) => {
-      m.
-      m.set(item, (m.get(item) || 0) + 1);
+      var group = m.get(frequency[1]) || [];
+      group.push(frequency[0]);
+      m.set(frequency[1], group);
       return m;
     }, new Map<number, string[] >());
 
-    const groups = new Map<number, string[]>();
-    [...frequencies.entries()].forEach(entry => {
-      let group = groups.get(entry[1]) || [];
-      group.push(entry[0]);
-
-      groups.set(entry[1], group);
-    });
-
     const values = [...groups.keys()].sort().reverse();
-
 
     if (top > groups.size) {
       return "n/a";
