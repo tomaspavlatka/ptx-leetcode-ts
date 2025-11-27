@@ -5,7 +5,6 @@ export class DummySolver {
 
   test(input: number[]): number {
     return this.solve(input);
-
   }
 }
 
