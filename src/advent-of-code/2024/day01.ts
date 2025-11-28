@@ -1,17 +1,21 @@
 import { readLines } from "../shared/line-reader"
 
 export const part1 = (sample: boolean): number =>  {
+
+  const left: number[] = [];
+  const right: number[] = [];
+
   const puzzle = getPuzzle(1, sample);
-  const map = puzzle.reduce((a, b) => {
-    const numbers = b.match(/\d+/g)!.map(Number);
-    a.set('left', [...a.get('left') || [], numbers[0]]);
-    a.set('right', [...a.get('right') || [], numbers[1]]);
+  for (const line of puzzle) {
+    const numbers = line.match(/\d+/g)!.map(Number);
 
-    return a;
-  }, new Map<string, number[]>);
+    left.push(numbers[0]);
+    right.push(numbers[1]);
 
-  const left = map.get('left')!.sort();
-  const right = map.get('right')!.sort();
+  }
+
+  left.sort();
+  right.sort();
 
   let sum = 0;
   for (const idx in left) {
