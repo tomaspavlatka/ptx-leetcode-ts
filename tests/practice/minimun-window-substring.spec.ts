@@ -1,5 +1,5 @@
 import { TreeNode } from "@src/shared/tree-node";
-import { shortestPath } from "@src/solvers/practice/shortest-path";
+import { shortestPath } from "@src/practice/shortest-path";
 
 describe('shortest-path', () => {
   it('test1', () => {

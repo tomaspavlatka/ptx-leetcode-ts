@@ -1,4 +1,4 @@
-import { groupAnagrams } from "@src/solvers/practice/group-anagrams.solver";
+import { groupAnagrams } from "@src/practice/group-anagrams.solver";
 
 describe('group-anagrams', () => {
   it('provide correct values when array is empty', () => {

@@ -1,4 +1,4 @@
-import { TopKFrequentItemsSolver } from "@src/solvers/practice/top-k-frequent-items.solver";
+import { TopKFrequentItemsSolver } from "@src/practice/top-k-frequent-items.solver";
 
 describe("TopKFrequentItemSolver", () => {
   const solver = new TopKFrequentItemsSolver();

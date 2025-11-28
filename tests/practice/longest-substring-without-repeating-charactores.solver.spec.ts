@@ -1,4 +1,4 @@
-import { lengthOfLongestSubstring } from "@src/solvers/practice/longest-substring-without-repeating-characters.solver";
+import { lengthOfLongestSubstring } from "@src/practice/longest-substring-without-repeating-characters.solver";
 
 describe('longest-substring-without-repeating-character', () => {
   it('test1', () => {

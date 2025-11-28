@@ -1,4 +1,4 @@
-import { lastItem, Node } from "@src/solvers/practice/last-items";
+import { lastItem, Node } from "@src/practice/last-items";
 
 describe('last-items', () => {
   const node: Node = {

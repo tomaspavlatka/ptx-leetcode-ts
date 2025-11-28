@@ -1,4 +1,4 @@
-import { CustomerOrderSumSolver, Order } from "@src/solvers/practice/customer-order-sum.solver";
+import { CustomerOrderSumSolver, Order } from "@src/practice/customer-order-sum.solver";
 
 describe("CustomerOrdersSumSolver", () => {
   var solver = new CustomerOrderSumSolver();
